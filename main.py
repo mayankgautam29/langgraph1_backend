@@ -13,7 +13,7 @@ client = OpenAI()
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://langgraph-1frontend.vercel.app/"],  # or specify your frontend origin like ["http://localhost:3000"]
+    allow_origins=["*"],  # or specify your frontend origin like ["http://localhost:3000"]
     allow_credentials=True,
     allow_methods=["*"],  # or ["POST"]
     allow_headers=["*"],
